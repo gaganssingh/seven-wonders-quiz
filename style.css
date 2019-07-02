@@ -1,0 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+}
