@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Quiz | The New Seven Wonders</title>
+    <title>Question Page | The New Seven Wonders Quiz</title>
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -37,19 +37,27 @@
         </a>
     </section>
     <section class="header">
-        <header role="banner">
-            <a href="index.html">
-                <img class="logo" src="assets/logo.png" alt="logo image">
-            </a>
-        </header>
-    </section>
-    <main role="main" class="quiz-start">
-        <h1>How well do you know The New 7 Wonders of the World?</h1>
-        <button class="btn-start-quiz" type="button">Start Quiz!</button>
+            <header role="banner">
+                <a href="index.html">
+                    <img class="logo" src="assets/logo.png" alt="logo image">
+                </a>
+            </header>
+        </section>
+        <section class="score-keeper">
+            <div>
+                <ul>
+                    <li>Question #: 4 of 7</li>
+                    <li>Current Score: 3</li>
+                </ul>
+            </div>
+        </section>
+    <main role="main" class="incorrect">
+            <h1>You were so close!</h1>
+            <p>The correct answer is: 220 B.C. to A.D. 1644</p>
+            <form>
+                <button class="start-over" type="button">Start Over</button>
+                <button class="next-ques" type="button">Next Question</button>
+            </form>
     </main>
-
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="index.js"></script>
-
 </body>
 </html>

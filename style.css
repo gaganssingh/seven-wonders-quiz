@@ -1,3 +1,4 @@
+/* Selectors for all pages */
 * {
     box-sizing: border-box;
 }
@@ -5,7 +6,97 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+li {
+    list-style: none;
+}
+
+.header {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
 .logo {
     width: 150px;
     height: 150px;
+}
+
+/* for index page */
+.quiz-start {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    margin: 50px auto 0;
+}
+
+.btn-start-quiz {
+    width: 150px;
+    margin: 0 auto;
+}
+
+/* for question, correct and incorrect pages */
+.score-keeper {
+    text-align: center;
+}
+
+/* for question page */
+.quiz {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    margin: 50px auto 0;
+}
+
+.start-over {
+    width: 150px;
+    margin: 0 auto;
+}
+
+/* for correct page */
+.correct {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    margin: 50px auto 0;
+}
+
+.next-ques {    
+    width: 150px;
+    margin: 0 auto;
+}
+
+/* for incorrect page */
+.incorrect {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    margin: 50px auto 0;
+}
+
+/* for score page */
+.final-score {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    margin: 50px auto 0;
 }

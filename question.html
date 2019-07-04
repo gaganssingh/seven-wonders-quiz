@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Quiz | The New Seven Wonders</title>
+    <title>Question Page | The New Seven Wonders Quiz</title>
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -43,13 +43,41 @@
             </a>
         </header>
     </section>
-    <main role="main" class="quiz-start">
-        <h1>How well do you know The New 7 Wonders of the World?</h1>
-        <button class="btn-start-quiz" type="button">Start Quiz!</button>
+    <section class="score-keeper">
+        <div>
+            <ul>
+                <li>Question #: 4 of 7</li>
+                <li>Current Score: 3</li>
+            </ul>
+        </div>
+    </section>
+    <main role="main" class="quiz">
+        <p>When was The Great Wall of China built?</p>
+        <form id="answers">
+            <input type="radio" id="multiple-choice"></input>
+            <label for="multiple-choice">220 B.C. to A.D. 1644</label>
+            <br>
+            
+            <input type="radio" id="multiple-choice"></input>
+            <label for="multiple-choice">337 B.C. to A.D. 1532</label>
+            <br>
+
+            <input type="radio" id="multiple-choice"></input>
+            <label for="multiple-choice">112 B.C. to A.D. 1713</label>
+            <br>
+
+            <input type="radio" id="multiple-choice"></input>
+            <label for="multiple-choice">57 B.C. to A.D. 1659</label>
+            <br>
+        </form>
     </main>
-
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="index.js"></script>
-
+    <section role="main">
+        <form class="start-over">
+            <button type="button">Start Over</button>
+        </form>
+    </section>
 </body>
 </html>
+
+
+
