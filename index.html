@@ -5,51 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Quiz | The New Seven Wonders</title>
-    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <section role="navigation" class="navbar">
-        <a href="index.html">
-            <ul>
-                <li>Home</li>
-            </ul>
-        </a>
-        <a href="question.html">
-            <ul>
-                <li>Question Page</li>
-            </ul>
-        </a>
-        <a href="correct.html">
-            <ul>
-                <li>Correct Answer Page</li>
-            </ul>
-        </a>
-        <a href="incorrect.html">
-            <ul>
-                <li>Incorrect Answer Page</li>
-            </ul>
-        </a>
-        <a href="score.html">
-            <ul>
-                <li>Final Score Page</li>
-            </ul>
-        </a>
-    </section>
-    <section class="header">
+    <section>
         <header role="banner">
-            <a href="index.html">
-                <img class="logo" src="assets/logo.png" alt="logo image">
-            </a>
+            <div class="header">
+                <a><img class="logo" src="assets/logo.png" alt="the 7 wonders logo"></a>
+                <div class="question-score">
+                    <ul>
+                        <li>Question Number: <span class="questionNum">0</span> of 7</li>
+                        <li>Current Score: <span class="score">0</span> out of 7</li>
+                    </ul>
+                </div>
+            </div>            
         </header>
     </section>
-    <main role="main" class="quiz-start">
+    <main role="main" class="question-form">
+      <div class="start-quiz">
         <h1>How well do you know The New 7 Wonders of the World?</h1>
-        <button class="btn-start-quiz" type="button">Start Quiz!</button>
+        <button type="button" class="btn-start-quiz">Start Quiz</button>
+      </div>
+      <div class="questions"></div>
     </main>
-
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="index.js"></script>
-
 </body>
 </html>
