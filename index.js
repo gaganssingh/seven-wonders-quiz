@@ -7,9 +7,7 @@ const STORE = [
             '112 B.C. to A.D. 1713',
             '57 B.C. to A.D. 1659'
             ],
-      correctAnswer: '220 B.C. to A.D. 1644',
-      icon: 'https://image.flaticon.com/icons/png/128/1605/1605907.png',
-      alt: 'The Great Wall of China'
+      correctAnswer: '220 B.C. to A.D. 1644'
     },
     {
       question: 'Who built the Taj Mahal?',
@@ -19,9 +17,7 @@ const STORE = [
             'Shah Jahan',
             'Farrukhsiyar'
             ],
-        correctAnswer: 'Shah Jahan',
-        icon: 'https://www.shareicon.net/data/256x256/2016/08/03/805957_building_512x512.png',
-        alt: 'Taj Mahal'
+        correctAnswer: 'Shah Jahan'
     },
     {
       question: 'Where is the Nabateans built city Petra located today?',
@@ -31,9 +27,7 @@ const STORE = [
             'Egypt',
             'Saudi Arabia'
             ],
-        correctAnswer: 'Jordan',
-        icon: 'https://image.flaticon.com/icons/png/128/809/809410.png',
-        alt: 'Petra, Jordan'
+        correctAnswer: 'Jordan'
     },
     {
       question: 'What was The Colosseum in Italy used for?',
@@ -43,9 +37,7 @@ const STORE = [
             'Basketball Games (Go Raptors!)',
             'Ice-skating Ring'
             ],
-      correctAnswer: 'An Amphitheater',
-      icon: 'https://image.flaticon.com/icons/png/128/1792/1792746.png',
-      alt: 'The Colosseum, Italy'
+      correctAnswer: 'An Amphitheater'
     },
     {
       question: 'How tall is Christ the Redeemer statue located in Brazil?',
@@ -55,9 +47,7 @@ const STORE = [
             '112 feet',
             '128 feet'
             ],
-      correctAnswer: '125 feet',
-      icon: 'https://www.inventicons.com/uploads/iconset/501/wm/128/Christ_the_Redeemer-18.png',
-      alt: 'Christ the Redeemer'
+      correctAnswer: '125 feet'
     },
     {
       question: 'How many steps does The Temple of Kukulkán in Chichén Itzá, Mexico have?',
@@ -67,9 +57,7 @@ const STORE = [
             '298 steps',
             '221 steps'
             ],
-      correctAnswer: '365 steps',
-      icon: 'https://image.flaticon.com/icons/png/128/1711/1711616.png',
-      alt: 'Chichén Itzá'
+      correctAnswer: '365 steps'
     },
     {
       question: 'When did the Yale professor Hiram Bingham discover the lost city of Machu Picchu?',
@@ -79,9 +67,7 @@ const STORE = [
             'June 18, 1912',
             'May 13, 1913'
             ],
-      correctAnswer: 'July 24, 1911',
-      icon: 'https://image.flaticon.com/icons/png/128/984/984077.png',
-      alt: 'Machu Picchu'
+      correctAnswer: 'July 24, 1911'
     }
 ];
 
@@ -108,7 +94,7 @@ function questionHTML() {
         <div class="question-${questionNum}">
             <h2>${STORE[questionNum].question}</h2>
             <form>
-                <fieldset>
+                <fieldset name="ques-answ">
                     <label class="multiple-choice">
                         <input type="radio" value="${STORE[questionNum].answers[0]}" name="answer" required>
                         <span>${STORE[questionNum].answers[0]}</span>
