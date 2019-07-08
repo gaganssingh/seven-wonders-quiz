@@ -151,7 +151,6 @@ function onCorrectAnswer() {
 }
 
 function whenAnswerCorrect () {
-  let correctAnswer = `${STORE[questionNum].correctAnswer}`;
   $('.questions').html(`
         <div class="correctFeedback">
             <div class="icon">
@@ -169,13 +168,12 @@ function onIncorrectAnswer() {
 }
 
 function whenAnswerIncorrect() {
-  let correctAnswer = `${STORE[questionNum].correctAnswer}`;
   $('.questions').html(`
         <div class="correctFeedback">
             <div class="icon">
                 <img src="https://image.flaticon.com/icons/svg/1533/1533919.svg">
             </div>
-            <p><strong>You were so close!</strong><br>Correct Answer: <span>"${correctAnswer}"</span></p>
+            <p><strong>You were so close!</strong><br>Correct Answer: <span>"${STORE[questionNum].correctAnswer}"</span></p>
             <div class="after-answer-btn">
                 <button class="start-over">Start Over</button>
                 <button type=button class="next-question">Next</button>
@@ -209,7 +207,16 @@ function incrementScore() {
 
 //Final score page
 function finalScore() {
-  if (score >= 6) {
+  if (score === 7) {
+    $('.questions').html(`
+        <div class="results correctFeedback">
+            <h3>YOU ARE A GOD!</h3>
+            <img src="https://media.giphy.com/media/hYAvfvuj8xKxO/giphy.gif" alt="funny gif of the creation of adam">
+            <p>${score} out of 7 correct answers</p>            
+            <button class="start-over">Start Over</button>
+        </div>`);
+  }
+  else if (score === 6) {
     $('.questions').html(`
         <div class="results correctFeedback">
             <h3>Congratulations!<br>You got most of them right.</h3>
@@ -229,7 +236,7 @@ function finalScore() {
     $('.questions').html(`
         <div class="results correctFeedback">
         <h3>Welcome to the League of Losers!</h3>
-        <img src="https://media.giphy.com/media/rKj0oXtnMQNwY/giphy.gif" alt="spongebob loder gif"/>
+        <img src="https://media.giphy.com/media/rKj0oXtnMQNwY/giphy.gif" alt="spongebob loser gif"/>
         <p>${score} out of 7 correct answers</p>
         <button class="start-over">Start Over</button>
         </div>`);
