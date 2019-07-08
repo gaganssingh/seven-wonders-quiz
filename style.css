@@ -34,8 +34,7 @@ body {
     width: 150px;
     height: 150px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
 }
 
 .question-form {
@@ -87,14 +86,14 @@ fieldset label {
 }
 
 label {
-    color: white;
-    border: 1px solid rgba(105, 105, 105);
-    border-radius: 10px;
-    background: #636e72;
     padding: 10px;
     margin-bottom: 10px;
     display: flex;
+    color: white;
     cursor: pointer;
+    border: 1px solid rgba(105, 105, 105);
+    border-radius: 10px;
+    background: #636e72;
     width: 100%;
 }
 
@@ -104,11 +103,13 @@ label:hover, label:focus {
 }
 
 input {
+/*    appearance: none;*/
+    margin-right: 15px;
+    position: relative;
     width: 20px;
     height: 20px;
-    /* outline: none; */
-    margin-right: 15px;
     border-radius: 80%;
+    outline: none;
 }
 
 h2 {
@@ -127,7 +128,6 @@ h2 {
 .correctFeedback {
     margin: 30px auto;
     text-align: center;
-/*    padding-top: 0px;*/
     border-radius: 10px;
 }
 

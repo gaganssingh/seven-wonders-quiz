@@ -117,9 +117,8 @@ function questionHTML() {
             </form>   
         </div>`;
 } else {
-    finalScore();
-    startOver();
-    $('.questionNum').text(7);
+  $('.questionNum').text(7);
+    finalScore();    
   }
 }
 
